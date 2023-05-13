@@ -1,22 +1,19 @@
-import logo from './logo.svg';
+import logo from './cappslogo.jpg';
 import './App.css';
+import Form from'./Form.js';
+import { Dropdown } from './Dropdown.js'
+import { DropdownElement } from './DropdownElement.js'
+
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="header">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to the CAPPS bolt configurator app!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <DropdownElement label="Length"/>
       </header>
     </div>
   );
