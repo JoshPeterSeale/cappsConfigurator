@@ -3,6 +3,8 @@ import './App.css';
 import Form from'./Form.js';
 import { Dropdown } from './Dropdown.js'
 import { DropdownElement } from './DropdownElement.js'
+import { GetLengths, GetDiameters, GetPitch, GetNutType } from './GetValues.js'
+import { DebugDropdownElement } from'./DebugDropdownElement.js'
 
 
 function App() {
@@ -13,8 +15,13 @@ function App() {
         <p>
           Welcome to the CAPPS bolt configurator app!
         </p>
-        <DropdownElement label="Length"/>
       </header>
+      <div className="Configurator">
+        <DropdownElement label="Length:" url="length"/>
+        <DropdownElement label="Diameter:   " url="diameter"/>
+        <DropdownElement label="Pitch:   " url="pitch" />
+        <DropdownElement label="Nut Type:   " url="nutType"/>
+      </div>
     </div>
   );
 }

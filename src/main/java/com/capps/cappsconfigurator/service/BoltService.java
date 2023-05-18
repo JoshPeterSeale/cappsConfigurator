@@ -1,10 +1,6 @@
 package com.capps.cappsconfigurator.service;
 
-import com.capps.cappsconfigurator.model.Bolts.AvailableDiameters;
-import com.capps.cappsconfigurator.model.Bolts.AvailableLengths;
-import com.capps.cappsconfigurator.model.Bolts.AvailableNutTypes;
-import com.capps.cappsconfigurator.model.Bolts.AvailablePitch;
-import org.springframework.stereotype.Component;
+import com.google.gson.Gson;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -14,38 +10,44 @@ import java.util.List;
 @Service
 public class BoltService {
 
-    public static List getDiameter() {
-        AvailableDiameters diameter15 = new AvailableDiameters(15);
-        AvailableDiameters diameter32 = new AvailableDiameters(32);
-        AvailableDiameters diameter40 = new AvailableDiameters(40);
-        AvailableDiameters diameter55 = new AvailableDiameters(55);
+    public static String getDiameter() {
+        int diameter15 = 15;
+        int diameter32 = 32;
+        int diameter40 = 40;
+        int diameter55 = 55;
         List availableDiameters = new ArrayList(Arrays.asList(diameter15, diameter32, diameter40, diameter55));
-        return availableDiameters;
+        Gson gson = new Gson();
+        String jsonDiameters = gson.toJson(availableDiameters);
+        return jsonDiameters;
     }
 
-    public List getLength() {
+    public String getLength() {
         List availableLengths = new ArrayList();
-        for (int i=100; i <=400; i = i+10) {
-            AvailableLengths length = new AvailableLengths(i);
-            availableLengths.add(length);
+        for (int i=100; i <=400; i = i+10) {;
+            availableLengths.add(i);
         }
-        //List availableLengths = new ArrayList(Arrays.asList(length100, length400));
-        return availableLengths;
+        Gson gson = new Gson();
+        String jsonLengths = gson.toJson(availableLengths);
+        return jsonLengths;
     }
 
-    public List getNutType() {
-        AvailableNutTypes nutCopper = new AvailableNutTypes("Copper");
-        AvailableNutTypes nutSteel = new AvailableNutTypes("Steel");
+    public String getNutType() {
+        String nutCopper = "Copper";
+        String nutSteel = "Steel";
         List availableMaterials = new ArrayList(Arrays.asList(nutCopper, nutSteel));
-        return availableMaterials;
+        Gson gson = new Gson();
+        String jsonNutType= gson.toJson(availableMaterials);
+        return jsonNutType;
     }
 
-    public List getPitch() {
-        AvailablePitch pitch5 = new AvailablePitch(5);
-        AvailablePitch pitch10 = new AvailablePitch(10);
-        AvailablePitch pitch15 = new AvailablePitch(15);
+    public String getPitch() {
+        int pitch5 = 5;
+        int pitch10 = 10;
+        int pitch15 = 15;
         List availablePitches = new ArrayList(Arrays.asList(pitch5, pitch10, pitch15));
-        return availablePitches;
+        Gson gson = new Gson();
+        String jsonPitch = gson.toJson(availablePitches);
+        return jsonPitch;
 
     }
 
