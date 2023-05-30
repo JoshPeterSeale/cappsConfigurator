@@ -5,23 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="048985ea-6ab3-4f64-b7de-6c7eea6e60ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_cedarsoftware_json_io_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/src/DebugDropdownElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/src/DropdownElement.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/src/GetValues.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cappsConfigurator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cappsConfigurator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/controller/BoltControllerV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/service/BoltServiceV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/controller/BoltController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/controller/BoltController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/model/Bolts/AvailableDiameters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/model/Bolts/AvailableLengths.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/model/Bolts/AvailableNutTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/model/Bolts/AvailablePitch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/service/BoltService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/service/BoltService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/src/DropdownElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/DropdownElement.js" afterDir="false" />
     </list>
@@ -29,6 +34,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

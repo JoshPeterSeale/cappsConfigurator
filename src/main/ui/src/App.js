@@ -18,8 +18,8 @@ function App() {
       </header>
       <div className="Configurator">
         <DropdownElement label="Length:" url="length"/>
-        <DropdownElement label="Diameter:   " url="diameter"/>
-        <DropdownElement label="Pitch:   " url="pitch" />
+        <DropdownElement label="Diameter:   " url="diameter" param="?length=55"/>
+        <DropdownElement label="Pitch:   " url="pitch" param="?diameter=10"/>
         <DropdownElement label="Nut Type:   " url="nutType"/>
       </div>
     </div>
