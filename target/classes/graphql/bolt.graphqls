@@ -1,0 +1,14 @@
+# Bolt object
+type Bolt {
+    diameter: Int!
+    length: Int!
+    nutMaterial: String!
+    pitch: Int!
+}
+
+input createBoltInput {
+    diameter: Int!
+    length: Int!
+    nutMaterial: String!
+    pitch: Int!
+}

@@ -1,0 +1,39 @@
+# All queries available on this GraphQL server
+"""
+type Query {
+    lengths: [Length]
+    diameters: [Diameter]
+    nutTypes: [NutTypes]
+    pitch: [Pitch]
+
+
+}
+
+type Pitch {
+    pitch: String
+}
+
+enum NutTypes {
+    Copper
+    Steel
+}
+
+type Diameter {
+    diameter: String
+}
+
+type Length {
+    length: String
+}
+"""
+type Query {
+    lengthsV3: [Int!]
+    diametersV3: [Int!]
+    nutTypesV3: [String!]
+    pitchV3: [Int!]
+    boltV3: [Bolt!]
+    boltByMaterial(nutMaterial: String!): [Bolt]!
+    boltByDiameterAndLength(diameter: Int!, length: Int!): [Bolt]!
+    boltByParameters(diameter: Int, length: Int, pitch: Int, nutMaterial: String): [Bolt]!
+}
+

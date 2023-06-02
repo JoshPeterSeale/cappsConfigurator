@@ -5,30 +5,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="048985ea-6ab3-4f64-b7de-6c7eea6e60ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/controller/BoltControllerV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/service/BoltServiceV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_graphql_java_graphql_java_19_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_graphql_java_java_dataloader_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_context_propagation_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_graphql_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_graphql_spring_graphql_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/controller/BoltControllerV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/model/Bolts/CreateBoltInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/service/BoltServiceV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/bolt.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/mutation.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/graphql/schema.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/07f0b5588afd0db853e637ce51d612bd95ad0297f65c40a8180a8715b618df82.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/088152a16b7b0667e40e42c28cf64228773f21254306b9bed43b352ae2aaa6d4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/09135843fc52640730e8dcb783c6b2b6cc2e60dd51a85793c8c4ebed4da6b240.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/0cf2984dcb8c19c8da9c5cf31aba94d5a03a60a29456ad080731bef1591c8e50.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/0ec5fc7d4c561e9d27fc832e16954466fbdc88467fbec12b3c4aaf621f79d6f3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/142ad92da200aed360e5e0487b5434292d938f474afe40a799b92aef472cbdbb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/1dd181b03c58917addc663482ac44a6acd57e9e2382d3f787ba4fe3bdca3c9d5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/2899432003586177238cd23670ae40d1cfa8b0325e4b5beacdd21acc9a43e4ab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/2ba811a43ad49230e77f02c2d197400ab5b1c5b351bfb42d948b1205f3878e15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/2c7f721278bdf1923993afeb4aaa0cf27ab23041164c488ba16b9aabbaca8588.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/361a412250993fea795962c2c6d5e681854256caf2dd82397fe91e0318c450b3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/37e5221e08ca2aacea3ffb3ffc7a1b0802e30979d439fe2f2ea2c9d735870ccb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/437aa9ba7e0833d9d16cd7e9af7dad67af463c5ce6c46f6ec1b971449cc25b54.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/45a36f223f5770beb7c585b42e071b7e1297a813782bd3aa40a0af60ce590e31.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/517757a9467644999278faf0f2d9083b5fd1a572c0d8c86d42b4546592271665.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/539c2b3185bc7a757e2d45e3d2d88ff31105f73cdbf0de43825ed59582d21c65.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/58b7bf2249538c6c22db404e4386b89a17846e1adef856a5f6c91e4509f6a367.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/6451f790348b1356517d28056199e480ef98709b9d313c3dc31480fae07f20e0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/660738e57d82b78845e6c7c51911a4e727b685bd4f583d334a8cb27d7289d351.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/670a675da98b11cc6d3e3dfcf60dcd50299073850579f372665d033f5fcbe4de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/6a7e69f96a677a56d8d8770bda0633ff88337c05dca2a6798a6b4fcf57035695.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/6e9552f66ba5b374f0e302b8a5889fe172ebda7196e2dff9a8d491a151d9b1a3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/6fbd1cc99e2f91f29d6cea1eb692fa050326d1cb0d3ac1822a8254feec1127d1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/7191966b5f0ecf25c8f84b7e63b1e199e76c6a26c92412307f6e4730f148ebba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/721439e9c04ce511e3b14b037a00d91c379c012705f0dc7731fff763253ccd2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/79f1a1501a58ba88a4deb2c8fb2e1ecfcbb2e31d835b578143290bdcb99fca33.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/822e679e4b46c422a2a2bd70e3546b7720a54f5e2bcf76724b56d8aab0b0cf8d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/833ac0c8662239befe99997513a06103f9898993765d7110278ccdb49fe9fc3c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/83d50937475282a9d3edcdd83a8c0e48b5ee175fe6bb92a6a83e52ced92851bc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/88042c8ee41f0456632d57637cd2f4175d7a29be5b99e46a5f9384eef09f2a69.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/88531b747f2ed61aea539583c49aa2ba2d4f8376b554cc23ddb1f9d4db222013.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/9da0f038583881aa9ea02f5e2da7127092addb3131f2a39e5fad9f4d9dabbd6e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/a495b199f9b71aea55af896141bd9b33e025779d403f3469ea41d2274391773b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/abdced40fd9c386e2938e0cbd525cf722ffc1f2e255dfc92b2c3a64d5162de89.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/ac83ec41b0d05f6d0bfefdb307dd44292e915d80487950374677f0850caae33e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/b66573314c6e7e2f5a30d43fb492a8c92b2196d2fa92367d8b85663807190999.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/bb761dfea0e9b419a4909cb2c1a22af682aeca83adcdbd37d3a7dd2351e04ff7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/c149c49728d96776dda2e0fb7c1d8963e1c734601fd6130cb83229d09398289b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/c48b009bb8f05f93f7e39565ea012a8bb873876de5d9deefe9308bef94ebd513.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/c5c3736f3c8d08ca28586c337a29129879ea387f528184fe79743b4fee52993a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/c897e1d4d25e35161b3c328a40c2953e5bc61b1c57aeb51e6a58fa0347506528.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/cc87e238b8dced4272001642139605d102a4ea9c6af96005b091ed20a2170d39.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/ccac4b9e59568dba39a4fdfa157020b419e24a7816393cb25b8337653eb18e7d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/d47f34f2f2b6dadcd87e38f6bba1012952525d9b56ca49f429949ad08e933857.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/ef064df0435361c5767081d1011614fdd27d5300f8f42e8e6f7a8e7ff218e03b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/f086d26fe3e756a04df8494aea276b393d3dcc1433950130dae5498884705429.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/f189059a1a1604a00c3af4d067dacdf98759c700115000260b4512bbdb4569a4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/babel-loader/ff614f3d9f7b61af40d35d92eb92840eb1f5ababbe30d60635020a7c0eccd8bc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack 26.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack 27.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack 28.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack 29.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack 30.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack 31.pack" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/capps/cappsconfigurator/controller/BoltControllerV2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/capps/cappsconfigurator/model/Bolts/CreateBoltInput.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/capps/cappsconfigurator/service/BoltServiceV2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/capps/cappsconfigurator/service/BoltServiceV3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/graphql/bolt.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/graphql/mutation.graphqls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/graphql/schema.graphqls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cappsConfigurator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cappsConfigurator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/10.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/11.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/12.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/13.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/model/Bolts/Bolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/capps/cappsconfigurator/model/Bolts/Bolt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/2.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/3.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/4.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/5.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/7.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/9.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack.pack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/node_modules/.cache/default-development/index.pack.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/src/DropdownElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/src/DropdownElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/capps/cappsconfigurator/model/Bolts/Bolt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/capps/cappsconfigurator/model/Bolts/Bolt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +111,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2P90X4pRSCQ0yuCQXn390baJ4Bi" />
   <component name="ProjectViewState">
@@ -72,9 +139,11 @@
       <recent name="$PROJECT_DIR$/cappsConfiguratorwreact/src/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/ui" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/cappsConfiguratorwreact/src" />
+      <recent name="$PROJECT_DIR$/src/main/resources/graphql" />
+      <recent name="$PROJECT_DIR$/src/main/resources/graphql/schema" />
+      <recent name="$PROJECT_DIR$/target" />
     </key>
   </component>
   <component name="RunManager" selected="Application.CappsConfiguratorApplication">

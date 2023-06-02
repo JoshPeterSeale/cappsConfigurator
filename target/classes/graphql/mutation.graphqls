@@ -1,0 +1,3 @@
+type Mutation {
+    createBolt(input: createBoltInput): Bolt
+}

@@ -13,8 +13,8 @@ import java.util.List;
 public class Bolt {
     public int diameter; // 15,32,40,55
     public int length; // 100 - 400 increments of 10mm
-    String nutMaterial; // copper, steel
-    int pitch; // how long it moves per rotation- (5, 10, 15), (5,10,15,20,32), (5,10,15,20,40), (5,10,15,20,32,55)
+    public String nutMaterial; // copper, steel
+    public int pitch; // how long it moves per rotation- (5, 10, 15), (5,10,15,20,32), (5,10,15,20,40), (5,10,15,20,32,55)
 
     public List<String> toList(){
         // create a list for use with the partConfigurator
