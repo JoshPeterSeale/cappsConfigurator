@@ -1,16 +1,19 @@
 import logo from './cappslogo.jpg';
 import NonInterchangeableConfiguratorForm from './components/configurator-form/NonInterchangeableConfiguratorForm';
+import './App.css';
 
 function App() {
   return (
     <div className="App" id="header">
-      <header className="App-header">
+      <h1 className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to the CAPPS bolt configurator app!
-        </p>
-      </header>
-      <div className="Configurator">
+        <div className='sub-header'>
+          <h2>
+            Welcome to the CAPPS bolt configurator app. Fill out the form to generate the product code.
+          </h2>
+        </div>
+      </h1>
+      <div className="configurator-container">
         <NonInterchangeableConfiguratorForm />
       </div>
     </div>
