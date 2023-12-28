@@ -1,0 +1,45 @@
+.form-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.field-item {
+    background-color: white;
+    padding: 2%;
+    border: 0.5px dashed #2332A4;
+    margin: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+p {
+    margin: 0.3px;
+}
+
+.field-header {
+    color: #2332A4;
+    grid-area: 1 / 2 / 1 / span 3;
+    padding-bottom: 5%;
+}
+
+.index {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+input {
+    grid-area: 3 / 2 / 3 / span 3;
+}
+
+.field-submission {
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    padding: 2%;
+    width:20%;
+    margin: auto;
+}

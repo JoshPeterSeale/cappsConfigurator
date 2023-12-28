@@ -1,0 +1,63 @@
+type Query {
+    getBlockTypesA: [BlockType]!
+    getBlockTypesB: [BlockType]!
+    getDimensions: [Int]!
+    getMountTypes: [MountType]!
+    getSpecialTreatmentTypes: [SpecialTreatment]!
+    getAccessories: [Accessory]!
+    getPreloads: [Preload]!
+    getAccuracies: [Accuracy]!
+    getBoltConfiguration: BoltConfigurationOutput!
+}
+
+type Accessory {
+    accessoryCode: String
+    accessoryLabel: String
+}
+
+type Accuracy {
+    accuracyCode: String
+    accuracyLabel: String
+}
+
+type BlockType {
+    blockTypeCode: String
+    blockTypeLabel: String
+}
+
+type MountType {
+    mountTypeCode: String
+    mountTypeLabel: String
+}
+
+type Preload {
+    preloadCode: String
+    preloadLabel: String
+    preloadCondition: String
+}
+
+type SpecialTreatment {
+    treatmentCode: String
+    treatmentLabel: String
+}
+
+
+type BoltConfigurationOutput {
+    productCode: String
+    price: Float
+}
+
+input BoltParameters {
+    blockType1: String
+    dimensions: Int
+    blockType2: String
+    blocksPerRail: Int
+    mountingType: String
+    length: Int
+    specialTreatment: String
+    accessory: String
+    preload: String
+}
+
+
+
