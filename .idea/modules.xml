@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cappsConfigurator.iml" filepath="$PROJECT_DIR$/.idea/cappsConfigurator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/cappsConfigurator.iml" filepath="$PROJECT_DIR$/backend/cappsConfigurator.iml" />
     </modules>
   </component>
 </project>
