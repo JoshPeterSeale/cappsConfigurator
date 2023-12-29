@@ -33,6 +33,10 @@ input {
     grid-area: 3 / 2 / 3 / span 3;
 }
 
+select {
+    grid-area: 3 / 2 / 3 / span 3;
+}
+
 .field-submission {
     background-color: white;
     display: grid;
@@ -42,4 +46,10 @@ input {
     padding: 2%;
     width:20%;
     margin: auto;
+}
+
+.form-output {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
 }

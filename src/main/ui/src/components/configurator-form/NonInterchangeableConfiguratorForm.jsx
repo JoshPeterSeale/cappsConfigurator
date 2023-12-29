@@ -1,8 +1,9 @@
 import { Field, getFormValues, reduxForm, change } from "redux-form"
 import { connect } from "react-redux";
-import NonInterchangeableConfiguratorOutput from "./NonInterchangeableConfiguratorOutput";
+import ConfiguratorOutput from "./ConfiguratorOutput";
 import './NonInterchangeableConfiguratorForm.css';
 import { gql, useQuery } from "@apollo/client";
+import {useState} from 'react';
 
 let GET_OPTIONS = gql`
 query GetParameters {
@@ -25,6 +26,8 @@ query GetParameters {
       blockTypeCode
       blockTypeLabel
     }
+
+    getDimensions
     
     getMountTypes{
       mountTypeCode
@@ -43,162 +46,26 @@ query GetParameters {
     }
   }
 `
-/*
-{
-    "data": {
-        "getAccuracies": [
-            {
-                "accuracyCode": "N",
-                "accuracyLabel": "Normal",
-                "__typename": "Accuracy"
-            },
-            {
-                "accuracyCode": "H",
-                "accuracyLabel": "Senior",
-                "__typename": "Accuracy"
-            },
-            {
-                "accuracyCode": "P",
-                "accuracyLabel": "Precision",
-                "__typename": "Accuracy"
-            },
-            {
-                "accuracyCode": "SP",
-                "accuracyLabel": "High Precision",
-                "__typename": "Accuracy"
-            }
-        ],
-        "getAccessories": [
-            {
-                "accessoryCode": "S",
-                "accessoryLabel": null,
-                "__typename": "Accessory"
-            },
-            {
-                "accessoryCode": "S",
-                "accessoryLabel": null,
-                "__typename": "Accessory"
-            },
-            {
-                "accessoryCode": "",
-                "accessoryLabel": null,
-                "__typename": "Accessory"
-            }
-        ],
-        "getBlockTypesA": [
-            {
-                "blockTypeCode": "H",
-                "blockTypeLabel": "High Profile",
-                "__typename": "BlockType"
-            },
-            {
-                "blockTypeCode": "S",
-                "blockTypeLabel": "Low Profile",
-                "__typename": "BlockType"
-            }
-        ],
-        "getBlockTypesB": [
-            {
-                "blockTypeCode": "A",
-                "blockTypeLabel": "Flange type",
-                "__typename": "BlockType"
-            },
-            {
-                "blockTypeCode": "B",
-                "blockTypeLabel": "Square block",
-                "__typename": "BlockType"
-            },
-            {
-                "blockTypeCode": "AL",
-                "blockTypeLabel": "Extended flange type",
-                "__typename": "BlockType"
-            },
-            {
-                "blockTypeCode": "BL",
-                "blockTypeLabel": "Extended square block",
-                "__typename": "BlockType"
-            }
-        ],
-        "getMountTypes": [
-            {
-                "mountTypeCode": "R",
-                "mountTypeLabel": "From above",
-                "__typename": "MountType"
-            },
-            {
-                "mountTypeCode": "K",
-                "mountTypeLabel": "From below",
-                "__typename": "MountType"
-            }
-        ],
-        "getPreloads": [
-            {
-                "preloadCode": "Z0",
-                "preloadLabel": "No preload",
-                "preloadCondition": "Fixed load direction with low impact and low precision",
-                "__typename": "Preload"
-            },
-            {
-                "preloadCode": "Z1",
-                "preloadLabel": "Middle preload",
-                "preloadCondition": "Light load and high precision",
-                "__typename": "Preload"
-            },
-            {
-                "preloadCode": "Z2",
-                "preloadLabel": "Heavy preload",
-                "preloadCondition": "Requirements for rigidity, vibration and impact",
-                "__typename": "Preload"
-            }
-        ],
-        "getSpecialTreatmentTypes": [
-            {
-                "treatmentCode": "E",
-                "treatmentLabel": "None: standard rail",
-                "__typename": "SpecialTreatment"
-            }
-        ]
-    }
-}
-
-
-*/
-
 function NonInterchangeableConfiguratorForm() {
 
     const { loading, error, data } = useQuery(GET_OPTIONS);
-    
 
-    if (data) {
-        let accuracies = data.getAccuracies;
-        let accuracyOptions = accuracies.map(accuracy => accuracy.accuracyLabel);
+    let [calculateFlag, setCalculateFlag] = useState(false);
 
-        let accessories = data.getAccessories;
-        let accessoryOptions = accessories.map(accessory => accessory.accessoryLabel);
-        console.log(accessoryOptions);
-
-        let blockTypesA = data.getBlockTypesA;
-        let blockTypeAOptions = blockTypesA.map(blockType => blockType.blockTypeLabel);
-
-        let blockTypesB = data.getBlockTypesB;
-        let blockTypeBOptions = blockTypesB.map(blockType => blockType.blockTypeLabel);
-
-        let mountTypes = data.getMountTypes;
-        let mountTypeOptions = mountTypes.map(mountType => mountType.mountTypeLabel);
-
-        let preloads = data.getPreloads;
-        let preloadOptions = preloads.map(preload => preloads.preloadLabel);
-        let preloadDescriptions = preloads.map(preload => preload.preloadCondition);
-
-        let specialTreatmentTypes = data.getSpecialTreatmentTypes;
-        let treatmentTypeOptions = specialTreatmentTypes.map(treatment => treatment.treatmentLabel);
+    let handleSubmit = (event) => {
+        event.preventDefault();
+        setCalculateFlag(true);
     }
 
     return(
         <div>
             {data &&
             <div>
-                <form>
+                {calculateFlag &&
+                <div className="form-output">
+                    <ConfiguratorOutput />
+                </div>}
+                <form onSubmit={handleSubmit}>
                     <div className="form-container">
                         <div className="field-item">
                             <p className="field-header"> Block Type A</p>
@@ -216,13 +83,17 @@ function NonInterchangeableConfiguratorForm() {
                         </div>
                         
                         <div className="field-item">
-                            <p className="field-header"> Dimensions</p>
+                            <p className="field-header"> Dimensions mm</p>
                             <Field 
                             name='dimensions'
-                            component='input'
+                            component='select'
                             label='dimensions'
-                            placeholder='dimensions'
-                            />
+                            >
+                                <option></option>
+                                {data.getDimensions.map(dimensions => {
+                                    return(<option value={dimensions}> {dimensions} </option>);
+                                })}
+                            </Field>
                             <p className="index"> 2 </p>
                         </div>
                         <div className="field-item">
@@ -339,14 +210,11 @@ function NonInterchangeableConfiguratorForm() {
                             />
                             <p className="index"> 11 </p>
                         </div>
-                    </div>
-                    <div className="field-submission"> 
-                        <button type="submit"> Configure! </button>
+                        <div className="field-submission"> 
+                            <button type="submit"> Configure! </button>
+                        </div>
                     </div>
                 </form>
-                <div className="form-output">
-                    <NonInterchangeableConfiguratorOutput productCode={'ABCDEFG'} />
-                </div>
             </div>}
             {loading && 
             <div> 

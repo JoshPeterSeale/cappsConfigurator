@@ -73,7 +73,9 @@ public class BoltService {
             boltParameters.getLength() +
             boltParameters.getSpecialTreatment() +
             boltParameters.getAccessory() +
-            boltParameters.getPreload();
+            boltParameters.getPreload() +
+            boltParameters.getAccuracy() +
+            boltParameters.getBlocksPerRail();
         return productCode;
     }
 

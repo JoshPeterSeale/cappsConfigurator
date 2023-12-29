@@ -17,4 +17,6 @@ public class BoltParameters {
     public String specialTreatment;
     public String accessory;
     public String preload;
+    public String accuracy;
+    public int railsPerAxix;
 }
